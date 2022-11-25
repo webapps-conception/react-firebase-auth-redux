@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   update,
   selectUser,
-} from './user';
+} from './actions/user';
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import './firebase'
 

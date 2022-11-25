@@ -4,7 +4,7 @@ import {
   update,
   putAsync,
   selectUser,
-} from './user';
+} from './actions/user';
 import {
   BrowserRouter as Router,
   Route,
@@ -57,12 +57,12 @@ function App() {
   }
 
   function handleClickSignOut() {
-    FirebaseSignOut(isError, user)
+    FirebaseSignOut(isError)
   }
 
   return (
     <div className="App">
-      <h1>Hello Firebase Basic Authentificate</h1>
+      <h1>Firebase Basic Authentificate Redux</h1>
       <Status />
       <Error />
       <Buttons />
